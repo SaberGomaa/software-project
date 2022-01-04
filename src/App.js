@@ -14,6 +14,10 @@ import Register2 from './components/register2'
 import Register3 from './components/register3'
 import Register4 from './components/register4'
 import Faq from './components/faq'
+import Stor from './components/stor'
+import Sport from './components/sport'
+
+
 class App extends Component {
     render() {
         return (
@@ -33,6 +37,8 @@ class App extends Component {
                         <Route path="/register3" element={<Register3 />} />
                         <Route path="/register4" element={<Register4 />} />
                         <Route path="/faq" element={<Faq />} />
+                        <Route path="/stor" element={<Stor />} />
+                        <Route path="/sport" element={<Sport />} />
                     </Routes>
                 </BrowserRouter>
             </div>

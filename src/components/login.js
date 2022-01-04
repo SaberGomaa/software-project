@@ -1,6 +1,5 @@
 import './login.css';
 import { Link, Outlet } from 'react-router-dom';
-// npm i -D react-router-dom@latest
 import { BsArrowLeftRight, BsFillPersonPlusFill } from 'react-icons/bs';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 import { AiOutlineUserAdd, AiOutlineUnlock } from 'react-icons/ai'
@@ -84,6 +83,24 @@ class Nav extends Component {
                 </div>
                 <div className="cont">
                     <button className="submit">Sign in</button>
+                </div>
+
+                <div className="footers">
+                    <div className="header-new">
+                        <div className="header-logo-new">
+                            <Link to="/" className="nav-menu-new"><img src="./logoo.png" alt="logo" className="logo-img-new"></img></Link>
+                        </div>
+                        <div className="middiv-new"></div>
+                        <div className="header-links-new">
+                            <Link to="/" className="links-icon-new"> &nbsp;<span className="link-text-new"> Home</span></Link>
+                            <Link to="/faq" className="links-icon-new"> &nbsp;<span className="link-text-new"> FAQ</span></Link>
+                            <Link to="/about" className="links-icon-new"> &nbsp; <span className="link-text-new"> About</span></Link>
+                            <Link to="/contact" className="links-icon-new"> &nbsp; <span className="link-text-new"> contact</span></Link>
+                            <Link to="/stor" className="links-icon-new"> &nbsp; <span className="link-text-new"> Stors</span></Link>
+                            <Link to="/stadium" className="links-icon-new"> &nbsp; <span className="link-text-new"> Stadium Location</span></Link>
+                            <Outlet />
+                        </div>
+                    </div>
                 </div>
             </div>
         );

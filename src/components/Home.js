@@ -59,7 +59,7 @@ class Home extends Component {
                         <h2>What is your next plan?</h2>
                         <p>Explore and book all exclusive events and matches.</p>
                         <div className="section">
-                            <Link to="/">
+                            <Link to="/sport">
                                 <div className="event first">
                                     <div className="images">
                                         <GiFootyField />
@@ -99,9 +99,9 @@ class Home extends Component {
                     </div>
                 </div>
                 <div className="sign">
-                    <button className="first">Sign in</button>
+                    <Link to="/login"><button className="first">Sign in</button></Link>
                     <p className="paragraph"> or </p>
-                    <button className="second">Register Now!</button>
+                    <Link to="register"><button className="second">Register Now!</button></Link>
                 </div>
                 <div className="foot">
                     <p className="paragraph">© 2021 Tazkarti. All rights reserved.</p>
